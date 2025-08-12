@@ -1,15 +1,37 @@
+html, body, p {
+    padding: 0;
+    margin: 0;
+}
+
 
 body {
     display: flex;
     flex-direction: column;
     font-family: Roboto, sans-serif;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.page__padding {
+    padding: 24px;
+}
+
+.page-container__max-width {
+    margin: auto;
+    max-width: 1024px;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding: 20px 200px 10px;
     margin: auto
+}
+
+.header-container__centered {
+    align-items: center;
 }
 
 #logo {
@@ -38,16 +60,19 @@ h1 {
     font-size: 40px;
 }
 
-.dark-background p {
-    font-size: 16px;
+.dark-background .hero-description {
     color: #E5E7EB;
-    max-width: 600px;
 }
 
-.dark-background img {
+.hero-description {
+    font-size: 16px;
+    max-width: 600px;
+    margin-bottom: 16px;
+}
+
+.headerPic {
     width: 300px;
     height: 250px;
-    margin-right: 50px;
 }
 
 .connect {
@@ -72,16 +97,19 @@ h1 {
     display: flex;
     justify-content: center;
     padding: 40px 0;
+    flex-wrap: wrap;
 }
 
 .icons {
     height: 100px;
     width: 100px;
+    position: relative;
 }
 
 .icon-calendar {
     height: 70px;
-    weight: 70px;
+    width: 70px;
+    padding-top: 20px;
 }
 
 figcaption {
@@ -105,7 +133,6 @@ figcaption {
     font-size: 36px;
     margin-bottom: 0;
     padding: 10px;
-
 }
 
 #speaker {
@@ -115,50 +142,53 @@ figcaption {
     margin-right: 200px;
     padding-bottom: 20px;
     padding-top: 0;
-
 }
 
-.white-background {
-    display: flex;
-    justify-content: center;
-}
 
 .signup {
-    margin: 60px;
-    padding: 30px;
-    width: 50vw;
-    height: 10vh;
     background-color: #3882F6;
     color: #F9FAF8;
     font-weight: 700;
     border-radius: 10px;
-    border: none;
     display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 24px;
 }
 
-.signup-text {
-    padding: 20px 20px 0 100px;
-}
-
-.bold {
+.bold-text {
     font-size: x-large;
-    margin: 0;
-    padding: 0;
 }
 
-.thin {
+.thin-text {
     font-weight: 200;
     font-size: medium;
-    margin-top: 10px;
+    max-width: 400px;
+    margin-top: 16px;
 }
 
 #signup-btn {
-    width: 150px;
-    height: 50px;
+    min-width: 150px;
+    min-height: 50px;
     border: 2px solid white;
     border-radius: 10px;
     background-color: #3882F6;
     color: white;
-    margin-right: 100px;
+}
+
+footer {
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#credit-icons {
+    margin: auto;
+    color: #E5E7EB;
+    font-size: 16px;
+}
+
+a {
+    color: #E5E7EB;
+    font-size: 16px;
 }
